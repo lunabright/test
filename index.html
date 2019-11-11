@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+ 	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title>タイトル</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+
+		<!-- OGP -->
+		<meta property="og:title" content="">
+		<meta property="og:url" content="">
+		<meta property="og:description" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ja_JP">
+		<meta property="og:image" content="">
+		<meta property="og:site_name" content="">
+
+		<!-- OGP　tw -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:image" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:creator" content="@">
+		<meta name="twitter:site" content="@">
+
+		<!-- アイコン -->
+		<link rel="shortcut icon" href="icon/favicon.ico" />
+		<!-- fontawesome -->
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  		<!-- Bootstrap -->
+		<link href="./asset/css/bootstrap-4.0.0.css" rel="stylesheet">
+		<link href="./asset/css/base.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./asset/css/style.css">
+		<link rel="stylesheet" href="./asset/css/animation.css">
+	</head>
+	<body>
+		<!-- body code goes here -->
+		
+		<a href="javascript:window.external.AddFavorite('https://landing-jp.com/test/common/','テスト')">お気に入りに追加</a><!--IEだけ-->
+
+		<div class="accbox">
+			<!--ラベル1-->
+			<label for="label1">ラベル</label>
+			<input type="checkbox" id="label1" class="cssacc">
+			<div class="accshow">
+				<!--ここに隠す中身-->
+				<div class="dateset">
+					<h4>見出し</h4>
+					<a href="#" class="linkbtn" target="_blank">詳細はこちら</a>
+					<span class="date">XX月XX日(X)〜XX月XX日(X)</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="zeroauto">
+			<!--四角を描くアニメーション-->
+			<div class="square zeroauto center rel">
+				<div class="sqtitle">あいうえお<br>あいうえお</div>
+			</div>
+
+			<!-- フォーカスしたら画像ズーム -->
+			<div class="scale-box">
+				<img src="./image/sample01.jpg" class="scale-img">
+			</div>
+		</div>
+
+		<span class="crafted-scroll__line"></span>
+		<span class="crafted-scroll__arrow-line"></span>
+		<span class="crafted-scroll__arrow-top"></span>
+
+		<!--複合技できない事例その1-->
+		<div style="text-align:center;">
+			<p class="st_mark01"><span>マーカーのような下線</span>と<span>中央揃え</span>と<span>複数行</span>は分かり合えない気がした<br class="sp">inlineじゃないと行ごとに下線が引けない、中央揃えにしたいならこれらを更にblock要素で囲んでtext-align:center<br class="sp">なお、inlineをinline-blockにすると下線が行からタグそのものにつく</p>
+		</div>
+
+		<!--リンク先を変更する-->
+		<a class="onoffbtn" id="colorLink" href="./asset/image/000.jpg">large pic</a>
+		<!--<a href="#" onclick="UpdateActionLink(001);">design1</a>-->
+		<!--<input type="button" value="Google" onclick="UpdateActionLink('001');" />-->
+		 <select id="sel">
+			<option value="0">- 未選択 -</option>
+			<option value="001">slect001</option>
+			<option value="002">slect002</option>
+			<option value="003">slect003</option>
+			<option value="004">slect004</option>
+			<option value="005">slect005</option>
+			<option value="006">slect006</option>
+		</select>
+		
+		<br>
+		<a onclick="launchApp()" href="#">ボタン</a>
+		<a href="music://">ミュージックアプリ</a><br>
+		<a href="video://">ビデオアプリ</a><br>
+		<a href="twitter://">ツイッターアプリ</a><br>
+		<a href="playstore://">Playストアアプリ</a><br>
+		<a href="gmail://">Gmailアプリ</a><br>
+		<a href="instagram://">インスタグラムアプリ</a><br>
+		<a href="steam://">steamアプリ</a><br>
+		<a href="kuronekoyamato://">ヤマト運輸アプリ</a><br>
+		<a href="atman://">アートマンアプリ</a>
+
+		<!--スクロールでページ内リンクにとぶ-->
+		<div id="page_top"><a href="#"><i class="fas fa-angle-up"></i></a></div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./asset/js/jquery-3.2.1.min.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="./asset/js/popper.min.js"></script>
+		<script src="./asset/js/bootstrap-4.0.0.js"></script>
+		<script src="./asset/js/change_link.js"></script>
+		<script src="./asset/js/launchapp.js"></script>
+	</body>
+</html>
